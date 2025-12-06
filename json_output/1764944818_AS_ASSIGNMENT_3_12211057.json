@@ -1,0 +1,107 @@
+{
+  "tables": {
+    "table_1": {
+      "current_a": [
+        8.06,
+        6.86,
+        6.26,
+        3.26,
+        1.46,
+        0
+      ],
+      "reverse_voltage": [
+        0,
+        -0.4,
+        -0.6,
+        -1.6,
+        -2.2,
+        -2.7
+      ]
+    },
+    "table_3": {
+      "current_ua": [
+        4.03,
+        8.06,
+        12.09,
+        16.12
+      ],
+      "intensity_w_m2": [
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    "table_4": {
+      "col_20_15": [
+        24.18
+      ],
+      "col_25": [
+        30
+      ]
+    },
+    "table_7": {
+      "current_ua": [
+        17.99,
+        13.85,
+        10.9,
+        8.68,
+        6.69,
+        5.58,
+        0
+      ],
+      "wavelength": [
+        150,
+        180,
+        210,
+        240,
+        270,
+        300,
+        546
+      ]
+    },
+    "table_9": {
+      "s_no": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "wavelength_nm": [
+        100,
+        110,
+        120,
+        130,
+        140,
+        150
+      ],
+      "col_1_wavelength_1_nm": [
+        0.01,
+        0.009,
+        0.0083,
+        0.0076,
+        0.0071,
+        0.0066
+      ],
+      "reverse_voltage": [
+        -8.32,
+        -7.0,
+        -6.1,
+        -5.3,
+        -4.6,
+        -4.0
+      ]
+    }
+  },
+  "text_fields": {
+    "apparatus": "-",
+    "theory": "-",
+    "procedure": "-",
+    "observations": "-",
+    "col_1_sample_material": "Sodium,",
+    "col_2_sample_material": "Sodium",
+    "col_3_sample_material": "Sodium"
+  }
+}

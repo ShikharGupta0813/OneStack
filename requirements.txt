@@ -1,0 +1,8 @@
+Flask==2.3.2
+SQLAlchemy==2.0.23
+pandas==2.2.2
+camelot-py[cv]==0.10.1
+tabula-py==2.8.1
+PyMuPDF==1.22.5
+python-dotenv==1.0.0
+opencv-python

@@ -1,0 +1,108 @@
+{
+  "tables": {
+    "table_1": {
+      "current_a": [
+        8.06,
+        6.86,
+        6.26,
+        3.26,
+        1.46,
+        0
+      ],
+      "reverse_voltage": [
+        0,
+        -0.4,
+        -0.6,
+        -1.6,
+        -2.2,
+        -2.7
+      ]
+    },
+    "table_3": {
+      "current_ua": [
+        4.03,
+        8.06,
+        12.09,
+        16.12
+      ],
+      "intensity_w_m2": [
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    "table_4": {
+      "col_20_15": [
+        24.18
+      ],
+      "col_25": [
+        30
+      ]
+    },
+    "table_7": {
+      "current_ua": [
+        17.99,
+        13.85,
+        10.9,
+        8.68,
+        6.69,
+        5.58,
+        0
+      ],
+      "wavelength": [
+        150,
+        180,
+        210,
+        240,
+        270,
+        300,
+        546
+      ]
+    },
+    "table_9": {
+      "s_no": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "wavelength_nm": [
+        100,
+        110,
+        120,
+        130,
+        140,
+        150
+      ],
+      "col_1_wavelength_1_nm": [
+        0.01,
+        0.009,
+        0.0083,
+        0.0076,
+        0.0071,
+        0.0066
+      ],
+      "reverse_voltage": [
+        -8.32,
+        -7.0,
+        -6.1,
+        -5.3,
+        -4.6,
+        -4.0
+      ]
+    }
+  },
+  "text_fields": {
+    "apparatus": "-",
+    "theory": "-",
+    "procedure": "-",
+    "observations": "-",
+    "col_1_sample_material": "Sodium,",
+    "col_2_sample_material": "Sodium",
+    "col_3_sample_material": "Sodium"
+  },
+  "full_text": " \nApplied Sciences Lab (BSL-102) \nEXPERIMENT-3 \nSubmitted to \nSubmitted By \nDr. Vidhu S.Tiwari \n             SHIKHAR GUPTA   \nBranch- CSE  \nRoll no- 12211057 \nAIM: \nTo study Photoelectric Effect and calculate the Work Function (W) of \nSodium(Na). \nAPPARATUS: - \nA light source \nA metal strip (Na) of specified area of cross section, \nAn ammeter \nA voltage source \nConnecting wires, clips, etc. \nTHEORY: - \nINTRODUCTION \n \nObserved by Heinrich Hertz in 1880 and explained by Albert Einstein in 1905 \nusing Max Planck's quantum theory of light, Photoelectric Effect is the \nphenomenon of emission of electrons when electromagnetic radiations \nhaving sufficient frequency incident on certain metal surfaces. \nEmitted electrons are known as Photoelectrons and the current they \nconstitute as Photocurrent. \nIMPORTANT OBSERVATIONS \nIt is an instantaneous phenomenon. There is no time delay between the \nincidence of light and emission of photoelectrons. \nThe number of photoelectrons emitted is proportional to the intensity of \nincident light. \nThe energy of emitted photoelectrons is independent of the intensity of \nincident light. \nThe energy of emitted photoelectron is directly proportional to the \nfrequency of incident light. \nThere must be a minimum energy needed for electrons to escape from a \nparticular metal surface and that energy is called Work Function 'W' for \nthat metal. \nEvery metal has its own characteristic value of Work Function (W) also \ndenoted by \n \n \nWhere, \nh = Planck’s Constant (6.626 x 10-34J-sec) \nvo = Threshold Frequency (frequency Minimum required \nfor photoelectric effect). \nAccording to Einstein, \nhv=KEmax+W \nKEmax=hv-hv0 \nKEmax=h(v-v0) \nIncreasing the reverse potential, the photocurrent gradually decreases and \nbecomes zero at a particular reverse potential. This minimum applied \nreverse potential is called Stopping Potential (Vo). \nTherefore, \nKEmax = eVo \nPROCEDURE: - \nTake the sample material (Sodium(Na)in this case) and set it steady. \nSpecify the area of the material, wavelength and intensity of incident light. \nSwitch “ON” the light source. \nFirstly keep the wavelength of incident light constant. \nNow measure current for different values of reverse voltage until current is \nzero. \nSecondly keep the wavelength of incident light constant and reverse \nvoltage as zero. \nNow measure current for different values of Intensities. \nThirdly keep the Intensity of incident light constant. \nNow measure current for different values of wavelength of the incident \nlight until current is zero. \nOBSERVATIONS: - \n1) Sample Material:Sodium, \narea =0.3 cm2 \nWavelength = 250nm \nIntensity = 10W/m2 \nCurrent(A) \nReverse voltage \n8.06 \n0 \n6.86 \n-0.4 \n6.26 \n-0.6 \n3.26 \n-1.6 \n1.46 \n-2.2 \n0 \n-2.7 \n2) Sample Material:Sodium \narea = 0.3cm2 \nWavelength = 250nm \nReverse Voltage =0V \nCurrent(uA) \nIntensity(W/m2) \n4.03 \n5 \n8.06 \n10 \n12.09 \n15 \n16.12 \n20 \n20.15 \n25 \n24.18 \n30 \n3) Sample Material:Sodium \narea = 0.3cm2 Intensity \n= 10W/m2 \nReverse Voltage = 0V \n \n \n \n \n \nCurrent(uA) \nWavelength \n17.99 \n150 \n13.85 \n180 \n10.90 \n210 \n8.68 \n240 \n6.69 \n270 \n5.58 \n300 \n0 \n546 \n \n \n \n \n \n \n \n \nCalculation: \nWork Function, = hc/λ – e*Vo \nWhere, \nh = Planck’s Constant (6.626 x 10-34J-sec) \n \n \nc = speed of light (3 x 108m/sec) \nλ = Wavelength of light \ne = electron charge (1.6 x 10-19C) \nVo = stopping potential \nNow, λ=250nm \nVo=2.7ev \nWork function = (124/25 – 2.7) eV= \n(4.96-2.7)eV \n=2.26eV \n \n \nGRAPICAL CALCULATION. \n \n \nS.no \nWavelength(nm) \n1/Wavelength(1/nm) \nReverse \nvoltage \n1 \n100 \n0.0100 \n-8.32 \n2 \n110 \n0.0090 \n-7.0 \n3 \n120 \n0.0083 \n-6.1 \n4 \n130 \n0.0076 \n-5.3 \n5 \n140 \n0.0071 \n-4.6 \n6 \n150 \n0.0066 \n-4.0 \n \n \nRESULT AND DISCUSSIONS \n \n \nThe theoretically calculated work function for Zinc \nmaterial is 8.187 electron volt. \n \nThe graphically calculated value of Zinc material is \n8.099 electron volt. \nCONCLUSION \nFrom this experiment we learnt about photoelectric effect \nand different materials and their work functions. Also,we \nlearnt how we can use the photoelectric experiment. \nPhotoelectric Effect is the phenomenon of emission \nof photoelectrons from a certain metal when E.M. \nrays of certain sufficient frequency are made \nincident on it. \n \nEvery metal has its own characteristic value of \nWork Function. \n \nFor constant Intensities and different frequencies, \nthe saturation value of current is same, but \nstopping potential is different. \n \nFor constant Frequencies and different Intensities, \nthe stopping potential is same, but the value of \nsaturation current is different. \n"
+}

@@ -1,0 +1,345 @@
+{
+  "tables": {
+    "table_1": [
+      {
+        "current_a": 8.06,
+        "reverse_voltage": 0
+      },
+      {
+        "current_a": 6.86,
+        "reverse_voltage": -0.4
+      },
+      {
+        "current_a": 6.26,
+        "reverse_voltage": -0.6
+      },
+      {
+        "current_a": 3.26,
+        "reverse_voltage": -1.6
+      },
+      {
+        "current_a": 1.46,
+        "reverse_voltage": -2.2
+      },
+      {
+        "current_a": 0,
+        "reverse_voltage": -2.7
+      }
+    ],
+    "table_2": [
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      }
+    ],
+    "table_3": [
+      {
+        "current_ua": 4.03,
+        "intensity_w_m2": 5
+      },
+      {
+        "current_ua": 8.06,
+        "intensity_w_m2": 10
+      },
+      {
+        "current_ua": 12.09,
+        "intensity_w_m2": 15
+      },
+      {
+        "current_ua": 16.12,
+        "intensity_w_m2": 20
+      }
+    ],
+    "table_4": [
+      {
+        "col_20_15": 24.18,
+        "col_25": 30
+      }
+    ],
+    "table_5": [
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      }
+    ],
+    "table_6": [
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      }
+    ],
+    "table_7": [
+      {
+        "current_ua": 17.99,
+        "wavelength": 150
+      },
+      {
+        "current_ua": 13.85,
+        "wavelength": 180
+      },
+      {
+        "current_ua": 10.9,
+        "wavelength": 210
+      },
+      {
+        "current_ua": 8.68,
+        "wavelength": 240
+      },
+      {
+        "current_ua": 6.69,
+        "wavelength": 270
+      },
+      {
+        "current_ua": 5.58,
+        "wavelength": 300
+      },
+      {
+        "current_ua": 0,
+        "wavelength": 546
+      }
+    ],
+    "table_8": [
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      }
+    ],
+    "table_9": [
+      {
+        "s_no": 1,
+        "wavelength_nm": 100,
+        "col_1_wavelength_1_nm": 0.01,
+        "reverse_voltage": -8.32
+      },
+      {
+        "s_no": 2,
+        "wavelength_nm": 110,
+        "col_1_wavelength_1_nm": 0.009,
+        "reverse_voltage": -7.0
+      },
+      {
+        "s_no": 3,
+        "wavelength_nm": 120,
+        "col_1_wavelength_1_nm": 0.0083,
+        "reverse_voltage": -6.1
+      },
+      {
+        "s_no": 4,
+        "wavelength_nm": 130,
+        "col_1_wavelength_1_nm": 0.0076,
+        "reverse_voltage": -5.3
+      },
+      {
+        "s_no": 5,
+        "wavelength_nm": 140,
+        "col_1_wavelength_1_nm": 0.0071,
+        "reverse_voltage": -4.6
+      },
+      {
+        "s_no": 6,
+        "wavelength_nm": 150,
+        "col_1_wavelength_1_nm": 0.0066,
+        "reverse_voltage": -4.0
+      }
+    ],
+    "table_10": [
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      },
+      {
+        "unknown": ""
+      }
+    ]
+  },
+  "text_fields": {
+    "apparatus": "-",
+    "theory": "-",
+    "procedure": "-",
+    "observations": "-",
+    "col_1_sample_material": "Sodium,",
+    "col_2_sample_material": "Sodium",
+    "col_3_sample_material": "Sodium"
+  }
+}
