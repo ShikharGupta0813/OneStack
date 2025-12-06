@@ -20,5 +20,5 @@ JSON_FOLDER = os.path.join(BASE_DIR, "json_output")
 # -----------------------------------------------
 
          # name for your new DB
-   SQLALCHEMY_DATABASE_URI = db_uri
+SQLALCHEMY_DATABASE_URI = db_uri
 
