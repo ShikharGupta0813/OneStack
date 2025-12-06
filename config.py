@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
+db_uri = os.getenv("SQLALCHEMY_DATABASE_URI")
 
 # Base directory of the project
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -16,13 +19,6 @@ JSON_FOLDER = os.path.join(BASE_DIR, "json_output")
 # ✅ PostgreSQL Configuration
 # -----------------------------------------------
 
-POSTGRES_USER = "postgres"
-POSTGRES_PASSWORD = "2004"          # your chosen password
-POSTGRES_HOST = "localhost"
-POSTGRES_PORT = "5432"
-POSTGRES_DB = "pdf_system"          # name for your new DB
+         # name for your new DB
+   SQLALCHEMY_DATABASE_URI = db_uri
 
-SQLALCHEMY_DATABASE_URI = (
-    f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}"
-    f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
-)
