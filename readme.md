@@ -1,14 +1,16 @@
 
 # Dynamic PDF Extraction & Table Storage System  
 ---
-# 🌐 Deployed Link
+# 🌐 Deployed Link and Zip File
 
  [Demo Link](https://onestack-vtnx.onrender.com)   |
-  [Video Link](https://www.loom.com/share/6c576a3a95ed4b078837464a890ac286)
+  [Video Link](https://www.loom.com/share/6c576a3a95ed4b078837464a890ac286) |
+ [Zip File](https://drive.google.com/file/d/1GW6qJqPQhHVeDWNCa5E99-3BiGHCCmZd/view?usp=sharing)
 
 
 Note -: The Upload route doesn't work becoz the free render web service only has 0.1 cpu and 512 mb ram and pdf extraction takes more resources 
-check out pdf history for looking at the extracted text and table
+check out pdf history for looking at the extracted text and table.
+You can download zip file or clone the repo and using the seput instructions in this readme ,you can run project in you local system
 
 ---
 ## Description
