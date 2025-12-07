@@ -2,11 +2,10 @@
 from flask import Blueprint, request, jsonify
 import os, time
 from werkzeug.utils import secure_filename
-from sqlalchemy import text
 
 from config import UPLOAD_FOLDER
 from services.pdf_extractor import extract_pdf_to_json
-from database.db import engine, metadata, reflect_table, init_db
+from database.db import engine, reflect_table, init_db
 from database.pdf_text_table import pdf_full_text
 
 from dynamic_tables import (
@@ -23,48 +22,48 @@ init_db()
 
 
 def allowed_file(filename):
-    return "." in filename and filename.lower().endswith(".pdf")
+    return filename.lower().endswith(".pdf")
 
 
 @upload_bp.route("/upload", methods=["POST"])
 def upload_pdf():
+    # ------------------- VALIDATE FILE --------------------
     if "file" not in request.files:
         return jsonify({"error": "No file uploaded"}), 400
 
     file = request.files["file"]
+
     if file.filename == "":
         return jsonify({"error": "Empty filename"}), 400
 
     if not allowed_file(file.filename):
-        return jsonify({"error": "Only PDF allowed"}), 400
+        return jsonify({"error": "Only PDF files allowed"}), 400
 
-    # Save file
+    # ------------------- SAVE FILE ------------------------
     filename = f"{int(time.time())}_{secure_filename(file.filename)}"
     filepath = os.path.join(UPLOAD_FOLDER, filename)
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     file.save(filepath)
 
-    # Extract
+    # ------------------- EXTRACT PDF -----------------------
     extracted = extract_pdf_to_json(filepath)
     tables_json = extracted["tables"]
     text_fields_json = extracted["text_fields"]
     full_text = extracted["full_text"]
 
-    # Insert raw JSON
+    # ------------------- INSERT INTO pdf_data --------------
     pdf_data = reflect_table("pdf_data")
 
     with engine.begin() as conn:
         res = conn.execute(
-            pdf_table.insert().values(
-                filename=file.filename,
+            pdf_data.insert().values(
                 tables=tables_json,
                 text_fields=text_fields_json
             )
         )
-
         pdf_id = res.inserted_primary_key[0]
 
-    # Insert full text
+    # ------------------- INSERT INTO pdf_full_text ----------
     with engine.begin() as conn:
         conn.execute(
             pdf_full_text.insert().values(
@@ -74,22 +73,26 @@ def upload_pdf():
             )
         )
 
+    # ------------------- CREATE DYNAMIC TABLES --------------
     created_tables = []
 
-    # Create each table separately
-    for table_name, table_data in tables_json.items():
-        cleaned = clean_table_columns(table_data)
+    for table_key, table_dict in tables_json.items():
 
+        cleaned = clean_table_columns(table_dict)
         if not cleaned or is_table_unknown(cleaned):
             continue
 
-        sql_table_name = f"table_{table_name.split('_')[1]}_{pdf_id}"
+        # Extract number from "table_3" → 3
+        table_num = table_key.split("_")[1]
+
+        sql_table_name = f"table_{table_num}_{pdf_id}"  # STAYS consistent
 
         create_or_update_table(sql_table_name, cleaned.keys())
         insert_table_data(pdf_id, sql_table_name, cleaned)
-        created_tables.append(sql_table_name)
 
-    # Return frontend-friendly output
+        created_tables.append(f"pdf_{sql_table_name}")
+
+    # ------------------- FINAL RESPONSE ---------------------
     return jsonify({
         "message": "PDF processed successfully",
         "pdf_id": pdf_id,

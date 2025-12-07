@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './premium-animations.css';
+
+/* Optional: Dark mode background for that "Modern Tech" look */
+body {
+  @apply bg-slate-950 text-slate-50 antialiased;
+}

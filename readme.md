@@ -1,16 +1,3 @@
-Great — here is a **complete, professional README.md** fully written for your project.
-It is designed to be copy-pastable into **one single block**.
-
-If you want, I can now convert this into a **PDF file**.
-
----
-
-# 🧾 **README.md — Dynamic PDF Table Extraction System**
-
-### **Created by: Shikhar Gupta — IIIT Sonepat**
-
----
-
 ```markdown
 # 📄 Dynamic PDF Extraction & Table Storage System  
 ### _Created by Shikhar Gupta — IIIT Sonepat_
@@ -298,8 +285,6 @@ npm run dev
 > **Frontend:** [https://your-frontend-demo-link.com](https://your-frontend-demo-link.com)
 > **Backend:** [https://your-backend-api-link.com](https://your-backend-api-link.com)
 
-(Replace once deployed)
-
 ---
 
 # ✨ Author
@@ -311,10 +296,3 @@ Indian Institute of Information Technology (IIIT) Sonepat
 
 ---
 
-```
-
----
-
-### ✅ If you want, I can now generate this README.md into a **PDF (with clean formatting)**  
-Just say **“Generate PDF now”**.
-```

@@ -10,7 +10,9 @@ def create_app():
     app = Flask(__name__)
 
     # Enable CORS for frontend (React)
-    CORS(app, resources={r"/*": {"origins": "*"}})
+    # CORS(app, resources={r"/*": {"origins": "*"}})
+    
+    CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
     # Register blueprints with URL prefixes
     app.register_blueprint(upload_bp, url_prefix="/api")
