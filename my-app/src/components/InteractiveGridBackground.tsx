@@ -6,7 +6,7 @@ import React, { useRef, useEffect, useState } from 'react';
  * - Pure React + Tailwind (no canvas, no extra libs)
  * - Optimized for performance
  */
-const GRID_SIZE = 28; // Number of columns/rows
+ // Number of columns/rows
 const CELL_SIZE = 32; // px
 const GLOW_RADIUS = 4; // cells
 const GLOW_MAX = 0.85; // max opacity

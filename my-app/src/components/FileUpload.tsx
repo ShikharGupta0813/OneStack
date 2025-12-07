@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { ArrowLeft, Zap, Upload } from "lucide-react";
+import { ArrowLeft, Upload } from "lucide-react";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
@@ -16,6 +16,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({
   onBack,
 }) => {
   const [isDragging, setIsDragging] = useState(false);
+  console.log(isDragging);
   const navigate = useNavigate();
   // Drag–Drop
   const handleDrop = useCallback(

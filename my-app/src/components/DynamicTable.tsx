@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { CheckCircle, Table as TableIcon, Code, Download } from 'lucide-react';
+import {  Table as TableIcon, Code, Download } from 'lucide-react';
 import type { ExtractedData } from '../types';
 
 interface DynamicTableProps {
