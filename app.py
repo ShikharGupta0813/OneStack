@@ -8,8 +8,14 @@ from database.db import init_db
 def create_app():
     app = Flask(__name__)
 
-    # CORS
-    CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+    CORS(app,
+     resources={r"/*": {"origins": [
+         "http://localhost:5173",
+         "http://127.0.0.1:5173",
+         "https://onestack-vtnx.onrender.com"
+     ]}},
+     supports_credentials=True)
+
 
     # Blueprints
     app.register_blueprint(upload_bp, url_prefix="/api")
