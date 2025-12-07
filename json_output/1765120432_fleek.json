@@ -1,0 +1,18 @@
+{
+  "tables": {
+    "table_1": {
+      "internship_certificate": [
+        "This is to certify that Mr. Shikhar Gupta has undergone an internship in our organization as ML",
+        4202542025.0,
+        "During his internship he was undertaken by the Project on “AI-Augmented Bug Prediction &",
+        "Prioritization Tool”. We found him active & competent in executing all assigned tasks.",
+        "Mr. Shikhar  has demonstrated diligence and is involved in his job with an appetite to learn.",
+        "We extend our warm congratulations to him."
+      ]
+    }
+  },
+  "text_fields": {
+    "date": 42025
+  },
+  "full_text": "   \n   \n   \n   \n   \n   \n   \n   \nDate: 04th April 2025   \n   \nInternship Certificate   \n    \nThis is to certify that Mr. Shikhar Gupta has undergone an internship in our organization as ML \nIntern from 4th April 2025 till 4th June2025.   \nDuring his internship he was undertaken by the Project on “AI-Augmented Bug Prediction & \nPrioritization Tool”. We found him active & competent in executing all assigned tasks.   \n Mr. Shikhar  has demonstrated diligence and is involved in his job with an appetite to learn.   \nWe extend our warm congratulations to him.   \n   \n   \nWith best wishes,    \n     \nSincerely yours,    \n   \nFleek IT Solutions  Pvt. Ltd.   \n    \n   \n     \n    \n   \n   \n      \n                                             ConﬁdenƟal Fleek IT SoluƟons Pvt. Ltd    \n"
+}

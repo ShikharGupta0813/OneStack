@@ -57,6 +57,7 @@ def upload_pdf():
     with engine.begin() as conn:
         res = conn.execute(
             pdf_data.insert().values(
+                filename=file.filename,
                 tables=tables_json,
                 text_fields=text_fields_json
             )

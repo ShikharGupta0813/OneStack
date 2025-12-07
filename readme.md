@@ -1,7 +1,12 @@
-```markdown
-# 📄 Dynamic PDF Extraction & Table Storage System  
-### _Created by Shikhar Gupta — IIIT Sonepat_
 
+# Dynamic PDF Extraction & Table Storage System  
+---
+# 🌐 Deployed Link
+
+# [Demo Link](https://onestack-vtnx.onrender.com)
+
+---
+## Description
 This project is a **complete PDF data-extraction system** that automatically:
 
 - Extracts **tables** from PDFs  
@@ -31,13 +36,11 @@ Short "key: value" lines from the PDF text are converted into structured data.
 Each table becomes a new SQL table:
 
 ```
-
 pdf_table_1_4      → table 1 from PDF ID 4
 pdf_table_2_4      → table 2 from PDF ID 4
 pdf_table_1_7      → table 1 from PDF ID 7
 
 ```
-
 This means **1000 PDFs = 1000× tables**, all independent and safely stored.
 
 ### ✔ 5. Cleaned Data  
@@ -213,7 +216,7 @@ Shows extracted text from `/text/<id>`.
 
 ### 5. Analytics Page
 
-Optional: show numeric summary for columns.
+Show numeric summary for columns.
 
 ---
 
@@ -267,6 +270,7 @@ pdf_full_text
 ### Backend
 
 ```bash
+activate virtual environment
 pip install -r requirements.txt
 python app.py
 ```
@@ -280,10 +284,8 @@ npm run dev
 
 ---
 
-# 🌐 Deployed Link
 
-> **Frontend:** [https://your-frontend-demo-link.com](https://your-frontend-demo-link.com)
-> **Backend:** [https://your-backend-api-link.com](https://your-backend-api-link.com)
+
 
 ---
 

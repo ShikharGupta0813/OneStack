@@ -9,29 +9,47 @@ interface TableMap {
   data: any[];
 }
 
+interface ColumnStats {
+  min: number | null;
+  max: number | null;
+  avg: number | null;
+}
+
+interface AnalyticsMap {
+  [tableName: string]: {
+    [column: string]: ColumnStats;
+  };
+}
+
 export default function Tables() {
   const { pdfId } = useParams();
   const [tables, setTables] = useState<TableMap[]>([]);
   const [fullText, setFullText] = useState("");
+  const [analytics, setAnalytics] = useState<AnalyticsMap>({});
 
   useEffect(() => {
     async function load() {
       try {
-        // Fetch list of table names
         const tableRes = await api.get(`/pdf/${pdfId}/tables`);
         const tableNames: string[] = tableRes.data.tables;
 
         const finalTables: TableMap[] = [];
+        const tableAnalytics: AnalyticsMap = {};
 
-        // Fetch each table's data and push to array
         for (const t of tableNames) {
+          // Fetch table rows
           const d = await api.get(`/table/${t}`);
           finalTables.push({ name: t, data: d.data });
+
+          // Fetch analytics
+          const a = await api.get(`/analytics/${t}`);
+          tableAnalytics[t] = a.data.analytics; // <-- CORRECT FOR YOUR RESPONSE
         }
 
         setTables(finalTables);
+        setAnalytics(tableAnalytics);
 
-        // Fetch full text from PDF
+        // Fetch full text
         const textRes = await api.get(`/text/${pdfId}`);
         setFullText(textRes.data.full_text);
       } catch (err) {
@@ -66,8 +84,37 @@ export default function Tables() {
           <h2 className="text-2xl font-bold mb-4 text-cyan-300">
             {table.name}
           </h2>
-
           <DynamicTable data={table.data} fileName={table.name} />
+          {/* --- Analytics Section --- */}
+          {analytics[table.name] && (
+            <div className="mt-6 p-4 bg-slate-800/80 border border-cyan-400/20 rounded-xl">
+              <h3 className="text-xl font-semibold text-cyan-300 mb-3">
+                Analytics for {table.name}
+              </h3>
+
+              <table className="w-full text-left border-collapse text-slate-200">
+                <thead>
+                  <tr className="border-b border-cyan-400/20">
+                    <th className="px-3 py-2">Column</th>
+                    <th className="px-3 py-2">Min</th>
+                    <th className="px-3 py-2">Max</th>
+                    <th className="px-3 py-2">Avg</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {Object.entries(analytics[table.name]).map(([col, stats]) => (
+                    <tr key={col} className="border-b border-cyan-400/10">
+                      <td className="px-3 py-2">{col}</td>
+                      <td className="px-3 py-2">{stats.min ?? "—"}</td>
+                      <td className="px-3 py-2">{stats.max ?? "—"}</td>
+                      <td className="px-3 py-2">{stats.avg ?? "—"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
       ))}
 

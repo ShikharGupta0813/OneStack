@@ -47,3 +47,14 @@ def try_parse_number(value):
         return int(text)
     except:
         return value
+
+def is_numeric_column(values):
+    for v in values:
+        if v is None:
+            continue
+        v = str(v).strip().replace(",", "")
+        try:
+            float(v)
+        except:
+            return False
+    return True

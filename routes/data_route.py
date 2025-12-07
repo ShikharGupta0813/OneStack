@@ -3,6 +3,7 @@ from flask import Blueprint, jsonify
 from sqlalchemy import text
 from database.db import engine, reflect_table
 from database.pdf_text_table import pdf_full_text
+from utils.helpers import is_numeric_column
 
 data_bp = Blueprint("data", __name__)
 
@@ -53,3 +54,61 @@ def get_pdf_text(pdf_id):
         return jsonify({"error": "No text found"}), 404
 
     return jsonify({"pdf_id": pdf_id, "full_text": row["full_text"]})
+
+@data_bp.route("/analytics/<table_name>", methods=["GET"])
+def analytics(table_name):
+    try:
+        with engine.connect() as conn:
+            # Get column names
+            cols = conn.execute(text(f"""
+                SELECT column_name 
+                FROM information_schema.columns 
+                WHERE table_name = :t
+            """), {"t": table_name}).fetchall()
+
+            analytics = {}
+
+            for (col,) in cols:
+                if col == "id":
+                    continue
+
+                # Fetch all values in this column
+                values = conn.execute(
+                    text(f'SELECT "{col}" FROM "{table_name}"')
+                ).fetchall()
+
+                cleaned = []
+                for (v,) in values:
+                    if v is None:
+                        continue
+                    v = str(v).strip().replace(",", "")
+
+                    # Try to convert to float
+                    try:
+                        cleaned.append(float(v))
+                    except:
+                        cleaned = None
+                        break
+
+                # If column contains non numeric -> skip
+                if not cleaned:
+                    analytics[col] = {
+                        "min": None,
+                        "max": None,
+                        "avg": None,
+                        "note": "Non-numeric column"
+                    }
+                    continue
+
+                # Compute stats
+                analytics[col] = {
+                    "min": min(cleaned) if cleaned else None,
+                    "max": max(cleaned) if cleaned else None,
+                    "avg": sum(cleaned)/len(cleaned) if cleaned else None
+                }
+
+        return jsonify({"table": table_name, "analytics": analytics})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    

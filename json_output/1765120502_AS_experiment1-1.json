@@ -1,0 +1,109 @@
+{
+  "tables": {
+    "table_3": {
+      "electromagnetic_current_i_a_magnetic_field_h_gauss": [
+        "",
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "unknown": [
+        "",
+        0.1482,
+        0.2223,
+        0.2964,
+        0.3706,
+        0.4447
+      ]
+    },
+    "table_4": {
+      "electromagnetic_current_i_a_magnetic_field_h_gauss_3_5": [
+        "",
+        4,
+        4.5,
+        5
+      ],
+      "col_0_5188": [
+        "",
+        0.5929,
+        0.667,
+        0.7411
+      ]
+    },
+    "table_5": {
+      "col_1": [
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5,
+        4,
+        4.5,
+        5,
+        ""
+      ],
+      "col_1556_362": [
+        2334.544,
+        3112.725,
+        3890.906,
+        4669.087,
+        5447.269,
+        6225.45,
+        7003.631,
+        7781.812,
+        ""
+      ]
+    },
+    "table_7": {
+      "electromagnetic_current_i_a": [
+        1,
+        1.5,
+        2
+      ],
+      "magnetic_field_h_gauss": [
+        0.1482,
+        0.2223,
+        0.2964
+      ],
+      "hall_voltage_vh": [
+        2593.938,
+        3890.906,
+        5187.875
+      ]
+    },
+    "table_8": {
+      "col_2_5": [
+        3,
+        3.5,
+        4,
+        4.5,
+        5
+      ],
+      "col_0_3706": [
+        0.4447,
+        0.5188,
+        0.5929,
+        0.667,
+        0.7411
+      ],
+      "col_6484_844": [
+        7781.812,
+        9078.781,
+        10375.75,
+        11672.719,
+        12969.687
+      ]
+    }
+  },
+  "text_fields": {
+    "submitted_to": "Submitted By:",
+    "date": "16-12-2022",
+    "fig_1": "Schematic representation of Hall Effect in a conductor.",
+    "ih_iv_varying_sample": "Gold",
+    "calculation": "Slope,",
+    "ih_is_constant_sample": "Gold t ="
+  },
+  "full_text": "1 \nINDIAN INSTITUTE OF  \nINFORMATION TECHNOLOGY  \nSONEPAT  \nApplied Science Lab  \nExperiment-1   \nSubmitted To:                                                    Submitted By:  \nDr. Vidhu S.Tiwari                                             Dev Pratap Singh \n                                                                          (CSE), 2022-26                    \n                                                                        12211068  \n                                                                             1st semester  \n2 \n                                                                             7011996378 \nDate:16-12-2022  \nEXPERIMENT-1  \n                \nAim:  \n(a) To calibrate an electromagnet.  \n(b) To study the dependence of Hall voltage on magnetic \nfield and current through the sample.  \nTheory:  \nIf a current carrying conductor placed in a perpendicular \nmagnetic field, a potential difference will generate in the \nconductor which is perpendicular to both magnetic field \nand current. This phenomenon is call Hall Effect. In solid \nstate physics, Hall effect is an important tool to \ncharacterize the materials especially semiconductors. It  \nFig. 1: Schematic representation of Hall Effect in a conductor.  \n3 \ndirectly determines both the sign and density of charge \ncarriers in a given sample.  \nFig. 1: Schematic representation of Hall Effect in a conductor.  \nObservation Table (a): \nCalibration of Electromagnet \n \nElectromagnetic Current (I) A  \nMagnetic Field (H) Gauss \n1 \n0.1482 \n1.5 \n0.2223 \n2 \n0.2964 \n2.5 \n0.3706 \n3 \n0.4447 \n4 \nElectromagnetic Current (I) A  \nMagnetic Field (H) Gauss \n3.5 \n0.5188 \n4 \n0.5929 \n4.5 \n0.6670 \n5 \n0.7411 \nObservation Table (b)  \n \n(b Vh= Ih ×Rh×H \n \nVh = Hall Voltage \nIh  = Hall Current \nRh = Hall Coefficient \n H = Applied Magnetic Field on Electromagnetic  \nt = Sample Thickness \n(i) Applied Magnetic field, H is constant but Hall Current  \n(IH) iv varying Sample: Gold  \nt = 0.0001 m, H = 0.2223 Gauss (corresponding to coil \ncurrent of 1.5 mA)  \nHall current (I) mA \nHall Voltage (Vh) mV \n5 \n1 \n1556.362 \n1.5 \n2334.544 \n2 \n3112.725 \n2.5 \n3890.906 \n3 \n4669.087 \n3.5 \n5447.269 \n4 \n6225.450 \n4.5 \n7003.631 \n5 \n7781.812 \n \n6 \nCalculation: Slope, \nm = 1556.363  \nm=Rh*H/t \n Or Rh=mt/c= 1556.363 × 0.0001 = 0.7001 m3/C (experimental \nvalue) H 0.2223  \nGiven value (as calculated by simulator) = 0.7 m3/C  \nCarrier Concentration, n = 1 = 8.916441613 × 1018 m−3  \n(experimental  \nRh × e \nvalue)  \nGiven value (as calculated by simulator) = 8.92857 X  \n1018 m-3  \n(ii) Applied Magnetic field, H is varying but Hall Current  \n(IH) is constant Sample: Gold t = \n0.0001 m, Hall Current IH = 2.5 mA  \nElectromagnetic \ncurrent(I) A \nMagnetic  \nField(H) Gauss \nHall Voltage (Vh) \n1 \n0.1482 \n2593.938 \n1.5 \n0.2223 \n3890.906 \n2 \n0.2964 \n5187.875 \n7 \n2.5 \n0.3706 \n6484.844 \n3 \n0.4447 \n7781.812 \n3.5 \n0.5188 \n9078.781 \n4 \n0.5929 \n10375.750 \n4.5 \n0.6670 \n11672.719 \n5 \n0.7411 \n12969.687 \nHall Coefficient, Rh = m × t= 17502.94197 × 0.0001 = 0.7001 m3/ \nC \nIh 2.5  \n𝐻  \n(experimental value)  \nGiven value (as calculated by simulator) = 0.7 m3/C  \nCarrier Concentration, n = 1 = 8.916441613 × 1018 m−3  \n(experimental Rh × e \nvalue)  \n8 \n \nGiven value (as calculated by simulator) = 8.92857 X  \n1018 m-3  \nResults & Discussion:  \n1. The Hall coefficient of Gold is 0.7 m3/C which is \nexactly equal to standard value.   \n2. The of carrier concentration is approximately equal to \n8.92857 X 1018m-3. There is some error because the \nvalue of electronic charge is taken 1.60217662 X 10-\n19 by me and the simulator must have taken a far less \nprecise value.   \n9 \n3. In this experiment we learned about the Hall effect, its \nproperties and calibration of electromagnet.   \n \n9 \n10 \n"
+}

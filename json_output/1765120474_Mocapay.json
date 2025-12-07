@@ -1,0 +1,23 @@
+{
+  "tables": {
+    "table_1": {
+      "internship_completion_certificate": [
+        "This is to certify that Shikhar Gupta, a student of IIIT Sonepat, has completed his/her internship with Mocapay",
+        "Infotech India Pvt. Ltd. from Jun 2, 2025, to Aug 2, 2025.",
+        "During the internship period, he was designated as an AI/ML Intern and was involved in the Project - AI Interview",
+        "BOT",
+        "He demonstrated a keen interest in learning, exhibited good communication and teamwork skills, and completed the",
+        "assigned work responsibly.",
+        "We wish Shikhar all the best in his future endeavors.",
+        42025,
+        "Place: Delhi NCR",
+        "Abhiruchi Joshi"
+      ]
+    }
+  },
+  "text_fields": {
+    "date": 42025,
+    "place": "Delhi NCR"
+  },
+  "full_text": "   \nINTERNSHIP COMPLETION CERTIFICATE   \n   \nThis is to certify that Shikhar Gupta, a student of IIIT Sonepat, has completed his/her internship with Mocapay \nInfotech India Pvt. Ltd. from Jun 2, 2025, to Aug 2, 2025.   \n   \nDuring the internship period, he was designated as an AI/ML Intern and was involved in the Project - AI Interview \nBOT   \n   \nHe demonstrated a keen interest in learning, exhibited good communication and teamwork skills, and completed the \nassigned work responsibly.   \n   \nWe wish Shikhar all the best in his future endeavors.   \n   \nDate: Aug 4, 2025   \nPlace: Delhi NCR   \n   \nAbhiruchi Joshi   \n   \nSr. HR Manager   \n   \n   \n  \n"
+}

@@ -100,7 +100,7 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({ data, fileName }) =>
         <div className="relative z-10">
           {viewMode === 'table' ? (
             <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse ">
+              <table className="w-full text-center border-collapse ">
                 <thead>
                   <tr className="bg-slate-950/80 border-b border-cyan-400/10 animate-fade-in">
                     {headers.map((header) => (
